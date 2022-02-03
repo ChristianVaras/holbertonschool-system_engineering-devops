@@ -1,5 +1,5 @@
 # 0x00 Shell, basics
-In this project I learned how to navigate, look around, manipulate files and work with basic shell commands using `cd`, `pwd`, `ls`, `less`, `file`, `mv`, `rm` and `mkdir`. Further, I practiced working with the `type`, `wich`, `help` and `man` commands, implementing wildcards, reading man pades. creating links, and using keyborad shortcuts in Bash.
+0;136;0cIn this project I learned how to navigate, look around, manipulate files and work with basic shell commands using `cd`, `pwd`, `ls`, `less`, `file`, `mv`, `rm` and `mkdir`. Further, I practiced working with the `type`, `wich`, `help` and `man` commands, implementing wildcards, reading man pades. creating links, and using keyborad shortcuts in Bash.
 ## Tasks :page_with_curl:
 
 * **0. Where am I?**
@@ -62,19 +62,19 @@ In this project I learned how to navigate, look around, manipulate files and wor
   did not exist in the parent directory or were newer than the versions in the parent working directory.
 
 * **15. Let’s move**
-  * [15-lets_move](./15-lets_move): Bash script that moves all files beginning with an uppercase
+  * [100-lets_move](./100-lets_move): Bash script that moves all files beginning with an uppercase
   letter to the directory `/tmp/u`.
 
 * **16. Clean Emacs**
-  * [16-clean_emacs](./16-clean_emacs): Bash script that deletes all files in the current working
+  * [101-clean_emacs](./101-clean_emacs): Bash script that deletes all files in the current working
   directory that end with the character `~`.
 
 * **17. Tree**
-  * [17-tree](./17-tree): Bash script that creates the directories `welcome/`,
+  * [102-tree](./103-tree): Bash script that creates the directories `welcome/`,
   `welcome/to/` and `welcome/to/holberton` in the current directory.
 
 * **18. Life is a series of commas, not periods**
-  * [18-commas](./18-commas): Bash script that lists all files and directories of the current
+  * [103-commas](./103-commas): Bash script that lists all files and directories of the current
   directory, including hidden ones, as follows:
     * Separated by commas (`,`).
     * Directory names end with a slash (`/`).
@@ -82,5 +82,5 @@ In this project I learned how to navigate, look around, manipulate files and wor
     * Only digits and letters are used to sort - digits come first.
 
 * **19. File type: Holberton**
-  * [holberton.mgc](./holberton.mgc): A magic file that can be used with the command `file` to
+  * [school.mgc](./school.mgc): A magic file that can be used with the command `file` to
   detect `Holberton` data files.
