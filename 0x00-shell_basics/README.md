@@ -26,16 +26,16 @@
     * Long format.
     * User and group ID's displayed numerically.
 
-* **6. Welcome holberton**
-  * [6-firstdirectory](./6-firstdirectory): Bash script that creates a directory named `holberton`
+* **6. Welcome**
+  * [6-firstdirectory](./6-firstdirectory): Bash script that creates a directory named `my_first_directory`
   in the `/tmp/` directory.
 
-* **7. Betty in Holberton**
+* **7. Betty in my first directory**
   * [7-movethatfile](./7-movethatfile): Bash script that moves the file `betty` from `/tmp/` to
-  `/tmp/holberton`.
+  `/tmp/my_first_directory`.
 
-* **8. Bye bye Betty**
-  * [8-firstdelete](./8-firstdelete): Bash script that deletes the file `betty` in `/tmp/holberton`.
+* **8. Bye bye My first directory**
+  * [8-firstdelete](./8-firstdelete): Bash script that deletes the file `betty` in `/tmp/my_first_directory`.
 
 * **9. Bye bye Holberton**
   * [9-firstdirdeletion](./9-firstdirdeletion): Bash script that deletes the directory `holberton`
@@ -71,7 +71,7 @@
 
 * **17. Tree**
   * [102-tree](./103-tree): Bash script that creates the directories `welcome/`,
-  `welcome/to/` and `welcome/to/holberton` in the current directory.
+  `welcome/to/` and `welcome/to/school` in the current directory.
 
 * **18. Life is a series of commas, not periods**
   * [103-commas](./103-commas): Bash script that lists all files and directories of the current
@@ -81,6 +81,6 @@
     * Alpha-ordered, except for the directories `.` and `..` which are listed at the beginning.
     * Only digits and letters are used to sort - digits come first.
 
-* **19. File type: Holberton**
+* **19. File type: School**
   * [school.mgc](./school.mgc): A magic file that can be used with the command `file` to
-  detect `Holberton` data files.
+  detect `School` data files.
