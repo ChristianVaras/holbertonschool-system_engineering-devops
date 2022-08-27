@@ -1,18 +1,25 @@
 #!/usr/bin/env bash
-# shellcheck disable=SC2086
-# display information about subdomains
+# Bash script that will display information about subdomains.
 
-display_info ()
-{
-    domain="${1}"
-    subdomain="${2}"
-    dig "${subdomain}.${domain}" | awk '/ANSWER SECTION:/{getline; printf "The subdomain %s is a %s record and points to %s\n", var, $4, $5}' var="${subdomain}"
+domain="${1}"
+subdomain="${2}"
+
+get_information() {
+		info[0]=$(echo "${search}" | awk '{print $4}')
+		info[1]=$(echo "${search}" | awk '{print $5}')
 }
 
-for subdomain in "www" "lb-01" "web-01" "web-02"
-do
-    if [ -z "${2}" ] || [ "${2}" == "${subdomain}" ] ;
-    then
-	display_info "${1}" "${subdomain}"
-    fi
-done
+
+if [ "${#}" -ge 2 ]
+then
+		search=$(dig "${subdomain}.${domain}" | grep -A1 'ANSWER SECTION:' | tail -1)
+		get_information "${search}"
+		echo "The subdomain ${subdomain} is a ${info[0]} record and points to ${info[1]}"
+else
+		for sub in "www" "lb-01" "web-01" "web-02"
+		do
+				search=$(dig "${sub}.${domain}" | grep -A1 'ANSWER SECTION:' | tail -1)
+				get_information "${search}"
+				echo "The subdomain ${sub} is a ${info[0]} record and points to ${info[1]}"
+		done
+fi
