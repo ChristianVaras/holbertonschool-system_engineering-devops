@@ -1,0 +1,3 @@
+## 0x13. Firewall
+> A firewall is a hardware or software security system. Two types of firesalls are network and host-based. The main function is to filter incoming and outgoing network traffic. ```telnet web-02.holberton.online 2222``` lets you check if port 2222 is open to web-02. Resources: [Wiki](https://en.wikipedia.org/wiki/Firewall_%28computing%29), [Digital Ocean Sample Code on ufw](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-firewall-with-ufw-on-ubuntu-20-04)
+and [How To Set Up the UFW Firewall on Linux](https://adamtheautomator.com/ufw-firewall/)
