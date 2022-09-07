@@ -2,7 +2,7 @@
 # Bash script that generates a MySQL dump
 
 password=$1
-name_backup=$(date +%d-%m-%y).tar.gz
+name_backup=$(date +%d-%m-%Y).tar.gz
 #Backup
 mysqldump --all-databases -u root [user name] –p "$password" > backup.sql
 #creates a tar.gz archive
