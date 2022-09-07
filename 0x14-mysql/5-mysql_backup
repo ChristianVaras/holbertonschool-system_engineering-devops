@@ -4,6 +4,6 @@
 password=$1
 name_backup=$(date +%d-%m-%Y).tar.gz
 #Backup
-mysqldump --all-databases -u root [user name] –p "$password" > backup.sql
+mysqldump --all-databases -u root –p "$password" > backup.sql
 #creates a tar.gz archive
 tar -czvf "$name_backup" backup.sql
