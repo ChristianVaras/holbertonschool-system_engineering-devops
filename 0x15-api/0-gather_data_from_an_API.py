@@ -25,8 +25,8 @@ def get_request():
                 TASK_TITLE.append(t.get('title'))
 
     print("Employee {} is done with tasks({}/{}):".format(EMPLOYEE_NAME,
-                                                           NUM_OF_DONE_TASKS,
-                                                           TOTAL_NUM_OF_TASKS))
+                                                          NUM_OF_DONE_TASKS,
+                                                          TOTAL_NUM_OF_TASKS))
     for task in TASK_TITLE:
         print('\t {}'.format(task))
 
