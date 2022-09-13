@@ -25,14 +25,14 @@ def export_to_json():
 
     """Export  to json"""
 
-    #Create the value of the dict of the final json file
+    # Create the value of the dict of the final json file
     jslist = []
     for t in TASK_STATUS_TITLE:
         jslist.append({"task": t[1], "completed": t[0], "username": USERNAME})
-    data = {argv[1] : jslist}
+    data = {argv[1]: jslist}
     filename = '{}.json'.format(argv[1])
 
-    #Generate json file
+    # Generate json file
     with open(filename, 'w') as f:
         json.dump(data, f)
 
